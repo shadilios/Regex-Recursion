@@ -2,7 +2,7 @@
 
 function division(number, dividedBy){
     // Write you logic here.
-    if(number==0||dividedBy==0){
+if(number==0||dividedBy==0){
         return 0;
       }else{
        
@@ -38,7 +38,7 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n){
     // Write you logic here.
-    if( n==1 || n===0 ){
+if( n==1 || n===0 ){
         return n;}
     else{
     return fibonacci(n-1) + fibonacci(n-2);
