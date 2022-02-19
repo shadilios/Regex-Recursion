@@ -7,7 +7,7 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s){
     // Add your logic.
-    let reg1 = /([a-z]|[A-Z])/g;
+let reg1 = /([a-z]|[A-Z])/g;
     let reg2 = /[!@#$%&()_*\-=\[\]{};':"\\|,.<>\/?]+|\d/g;
     let reg3 = /A$/g;
     let firstString = reg1.test(s);
@@ -29,7 +29,7 @@ which end with io (example@example.io) */
 
 function ioEmail(email){
     // Add your logic.
-    let emailTest = email.match(/^[\w]+@([\w-])+[\w-].io$/g);
+let emailTest = email.match(/^[\w]+@([\w-])+[\w-].io$/g);
     if(emailTest != null){
         return true;
     }else{
@@ -45,7 +45,7 @@ required extention are jpg, jpeg and png.
 */
 
 function imagesSearcher(text){
-    let firstArray= [];
+let firstArray= [];
     let secondArray = text.split(" ");
     secondArray.forEach(element => {
         if(element.match(/([a-zA-Z0-9\s_\\.\-\(\):])+(.jpeg|.jpg|.png)$/g) != null){
