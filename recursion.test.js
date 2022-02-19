@@ -2,7 +2,12 @@
 
 function division(number, dividedBy){
     // Write you logic here.
-    return;
+if(number==0||dividedBy==0){
+        return 0;
+      }else{
+       
+       return 1 + division(number-dividedBy,dividedBy);
+      }
 }
 
 /* Write a function that implement Math.pow(x,n) but using recursion
@@ -12,8 +17,14 @@ pow(2,4) = 16
 
 
 function pow(x,n){
-    // Write you logic here.
-    return;
+// Write you logic here.
+    if (n != 0){
+        return (x*pow(x, n-1));
+    }
+    else{
+        return 1;
+    }  
+return
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -27,7 +38,11 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n){
     // Write you logic here.
-    return;
+if( n==1 || n===0 ){
+        return n;}
+    else{
+    return fibonacci(n-1) + fibonacci(n-2);
+    }
 }
 
 /* Optional 
